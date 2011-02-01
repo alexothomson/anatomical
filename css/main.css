@@ -1,0 +1,49 @@
+/*SD:0w31TeQ59w0w0*/
+body{
+	background: #291F16;
+	font-family: Frutiger, ‘Frutiger Linotype’, Univers, Calibri, ‘Gill Sans’, ‘Gill Sans MT’, ‘Myriad Pro’, Myriad, ‘DejaVu Sans Condensed’, ‘Liberation Sans’, ‘Nimbus Sans L’, Tahoma, Geneva, ‘Helvetica Neue’, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+.logo{
+	height:50px;
+	width:330px;
+	margin:15px;
+}
+.body{
+	margin-left:30px;
+	margin-top:15px;
+}
+.addatom{
+	height:150px;
+	width:550px;
+	padding:10px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	background: #94806E;
+	vertical-align:text-top;
+}
+.formatom-header{
+	font-weight:bold;
+	padding-left:10px;
+	color:#10131C;
+}
+table{
+	margin:0px;
+	padding:0px;
+	border-collapse: collapse;
+}
+.formatom-left{
+float:left;
+width:35%;
+}
+
+.formatom-right{
+float:right;
+width:65%;
+}
+.formatom-post{
+	position:absolute;
+	margin-top:115px;
+	margin-left:450px;
+	cursor:pointer;
+}
