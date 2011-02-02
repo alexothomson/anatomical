@@ -1,0 +1,46 @@
+#addatom{
+	position:absolute;
+	top: 85px;
+	left:75px;
+	height:147px;
+	width:550px;
+	background: #94806E;
+	vertical-align:text-top;
+}
+.formatom-header{
+	font-weight:bold;
+	padding-left:10px;
+	color:#10131C;
+}
+.addatom-div{
+	position: absolute;
+}
+.addatom-leftcol{
+	left:20px;
+}
+.addatom-rightcol{
+	left:210px;
+}
+#addatom-author{	
+	top:2px;
+}
+#addatom-downtime{
+	top:47px;
+}
+#addatom-machinename{
+	top:94px;
+}
+#addatom-machineip{
+	top:94px;
+}
+#addatom-summary{
+	top:2px;
+}
+#formatom-summary{
+	height: 68px;
+}
+#formatom-post{
+	top:105px;
+	left:500px;
+	cursor:pointer;
+}
