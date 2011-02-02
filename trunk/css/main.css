@@ -5,6 +5,8 @@ body{
 	font-weight: bold;
 }
 .logo{
+	position:absolute;
+	top:0px;
 	height:50px;
 	width:330px;
 	margin:15px;
@@ -13,37 +15,35 @@ body{
 	margin-left:30px;
 	margin-top:15px;
 }
-.addatom{
-	height:150px;
+
+#readatom{
+	position:absolute;
+	top: 275px;
+	left:75px;
 	width:550px;
-	padding:10px;
-	border-radius: 8px;
-	-moz-border-radius: 8px;
-	background: #94806E;
+	padding:15px 15px 0px 15px;
+	background: #6D768D;
 	vertical-align:text-top;
 }
-.formatom-header{
-	font-weight:bold;
-	padding-left:10px;
-	color:#10131C;
-}
-table{
-	margin:0px;
-	padding:0px;
-	border-collapse: collapse;
-}
-.formatom-left{
-float:left;
-width:35%;
+.readatom1{
+	background: #99AAD9;
+	padding:10px;
+	margin-bottom: 15px;
 }
 
-.formatom-right{
-float:right;
-width:65%;
+.readatom2{
+	background: #A6ABBA;
+	padding:10px;
+	margin-bottom: 15px;
 }
-.formatom-post{
+
+.readatom-header{
 	position:absolute;
-	margin-top:115px;
-	margin-left:450px;
-	cursor:pointer;
+	top:248px;
+	left:90px;
+	height:27px;
+	background: #5e8f32;
+	font-size:18px;
+	padding:2px 8px 0px 8px;
+	color:#291F16;
 }

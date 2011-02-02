@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.48.0 r9654"
    sodipodi:docname="logo.svg"
-   inkscape:export-filename="F:\My Dropbox\Pollicitus\anatomical\logo.png"
+   inkscape:export-filename="F:\My Dropbox\Pollicitus\anatomical\img\logo.png"
    inkscape:export-xdpi="161.17523"
    inkscape:export-ydpi="161.17523">
   <title
@@ -30,7 +30,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="93.532534"
+     inkscape:cx="38.353963"
      inkscape:cy="1.7561809"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -41,8 +41,8 @@
      fit-margin-bottom="0"
      inkscape:window-width="1385"
      inkscape:window-height="773"
-     inkscape:window-x="175"
-     inkscape:window-y="175"
+     inkscape:window-x="510"
+     inkscape:window-y="88"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -72,11 +72,11 @@
          id="tspan2987"
          x="82.85714"
          y="346.64789"><tspan
-           style="fill:#6d768d;fill-opacity:1"
+           style="fill:#4d75ab;fill-opacity:1"
            id="tspan3757">an</tspan><tspan
-           style="fill:#5e8f64;fill-opacity:1"
+           style="fill:#5e8f32;fill-opacity:1"
            id="tspan3761">atom</tspan><tspan
-           style="fill:#6d768d;fill-opacity:1"
+           style="fill:#4d75ab;fill-opacity:1"
            id="tspan3759">ical</tspan></tspan></text>
   </g>
 </svg>

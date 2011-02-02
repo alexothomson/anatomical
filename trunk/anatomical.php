@@ -1,78 +1,53 @@
 <?php
-if(file_exists("anatomical.xml")){echo(1);}
+/*
+ * Copyright (C) 2011 Alex Thomson
+  
+ * This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 2 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 ?>
-<html xmlns="http://www.w3.org/2002/06/xhtml2"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.w3.org/2002/06/xhtml2 TBD"
-	xml:lang="en">
+<html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		
-		<title>anatomical | v0.1</title>
+		<title>anatomical | v 0.1</title>
 		
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/addatom.css" />
+		
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.corner.js"></script>
+		
+		<link rel="shortcut icon" href="img/favicon.ico" />
 	</head>	 
 	<body>
 		<div id="header" class="header">
 			<img id="logo" class="logo" src="img/logo.png"/>
 		</div>
-		<div id="body" class="body">
-			<div id="addatom" class="addatom">
-				<form id="formatom" name="formatom" class="formatom">
-					<div class="formatom-left">
-						<table>
-							<tr>
-								<td class="formatom-header">Author</td>							
-							</tr>
-							<tr>
-								<td>
-									<input type="text" id="formatom-author" name="formatom-author">
-								</td>
-							</tr>
-							<tr>							
-								<td class="formatom-header">Downtime</td>							
-							</tr>
-							<tr>
-								<td>
-									<input type="text" id="formatom-author" name="formatom-author">
-								</td>
-							</tr>
-							<tr>
-								<td class="formatom-header">Machine Name</td>
-							</tr>
-							<tr>
-								<td>
-									<input type="text" id="formatom-author" name="formatom-author">
-								</td>
-							</tr>
-						</table>
-					</div>
-					<div class="formatom-right">
-						<table>
-							<tr >							
-								<td class="formatom-header" colspan=2>Summary</td>
-							</tr>
-							<tr>
-								<td>
-									<textarea style="height:75px;" colspan=2 cols="37" rows="3" id="formatom-summary" name="formatom-summary"></textarea>
-								</td>
-							</tr>
-							<tr>
-								<td class="formatom-header">Machine IP</td>
-							</tr>
-							<tr>
-								<td >
-									<input type="text" id="formatom-author" name="formatom-author">
-								</td>
-							</tr>
-						</table>
-					</div>					
-				</form>
-				<img class="formatom-post" src="img/post.png">
+		<div id="body" class="body">			
+			<?php if(file_exists("addatom.html")){echo file_get_contents("addatom.html");}?>
+			<div class="readatom-header">Latest Atoms</div>	
+			<div id="readatom" class="readatom">				
+				<div class="readatom1">Hello.</div>
+				<div class="readatom2">How are you.</div>
+				<div class="readatom1">This is a test.</div>
 			</div>
-			<div id="readatom" class="readatom">
-			
-			</div>
+			<script type="text/javascript">
+				$('#readatom').corner();
+				$('.readatom1').corner();
+				$('.readatom2').corner();
+				$('.readatom-header').corner("top");
+			</script>
 		</div>
 
 	</body>	 
