@@ -1,16 +1,33 @@
 #addatom{
 	position:absolute;
-	top: 85px;
+	top: 112px;
 	left:75px;
 	height:147px;
 	width:550px;
-	background: #94806E;
+	background: #999;
 	vertical-align:text-top;
+	-moz-box-shadow: 0 0 3px 3px #4d75ab;
+	-webkit-box-shadow: 0 0 3px 3px #4d75ab;
+	box-shadow: 0 0 3px 3px #4d75ab;
+	
+}
+.addatom-header{
+	position:absolute;
+	top:85px;
+	left:90px;
+	height:27px;
+	background: #777;
+	font-size:18px;
+	padding:2px 8px 0px 8px;
+	color:#000;
+	font-weight:bold;
 }
 .formatom-header{
+	font-size:14px;
 	font-weight:bold;
 	padding-left:10px;
-	color:#10131C;
+	color:#000;
+	font-family: Constantia, ‘Lucida Bright’, Lucidabright, ‘Lucida Serif’, Lucida, ‘DejaVu Serif’, ‘Bitstream Vera Serif’, ‘Liberation Serif’, Georgia, serif
 }
 .addatom-div{
 	position: absolute;
