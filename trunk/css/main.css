@@ -2,7 +2,6 @@
 body{
 	background: #291F16;
 	font-family: Frutiger, ‘Frutiger Linotype’, Univers, Calibri, ‘Gill Sans’, ‘Gill Sans MT’, ‘Myriad Pro’, Myriad, ‘DejaVu Sans Condensed’, ‘Liberation Sans’, ‘Nimbus Sans L’, Tahoma, Geneva, ‘Helvetica Neue’, Helvetica, Arial, sans-serif;
-	font-weight: bold;
 }
 .logo{
 	position:absolute;
@@ -18,12 +17,26 @@ body{
 
 #readatom{
 	position:absolute;
-	top: 275px;
+	top: 302px;
 	left:75px;
 	width:550px;
 	padding:15px 15px 0px 15px;
-	background: #6D768D;
+	background: #555;
 	vertical-align:text-top;
+	-moz-box-shadow: 0 0 3px 3px #666;
+	-webkit-box-shadow: 0 0 3px 3px #666;
+	box-shadow: 0 0 3px 3px #666;
+}
+.readatom-header{
+	position:absolute;
+	top:275px;
+	left:90px;
+	height:27px;
+	background: #444;
+	font-size:18px;
+	padding:2px 8px 0px 8px;
+	color:#999;
+	font-weight:bold;
 }
 .readatom1{
 	background: #99AAD9;
@@ -37,13 +50,3 @@ body{
 	margin-bottom: 15px;
 }
 
-.readatom-header{
-	position:absolute;
-	top:248px;
-	left:90px;
-	height:27px;
-	background: #5e8f32;
-	font-size:18px;
-	padding:2px 8px 0px 8px;
-	color:#291F16;
-}
