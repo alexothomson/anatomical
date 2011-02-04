@@ -6,11 +6,13 @@
 	width:550px;
 	background: #999;
 	vertical-align:text-top;
-	-moz-box-shadow: 0 0 3px 3px #4d75ab;
-	-webkit-box-shadow: 0 0 3px 3px #4d75ab;
-	box-shadow: 0 0 3px 3px #4d75ab;
+	-moz-box-shadow: 0 0 3px 3px #666;
+	-webkit-box-shadow: 0 0 3px 3px #666;
+	box-shadow: 0 0 3px 3px #666;
 	
 }
+
+
 .addatom-header{
 	position:absolute;
 	top:85px;

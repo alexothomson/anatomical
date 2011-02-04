@@ -1,5 +1,5 @@
-<div class="addatom-header">New Atom</div>	
-<div id="addatom">
+<div class="addatom-header corner">New Atom</div>	
+<div id="addatom" class="corner">
 	<form id="formatom" name="formatom" class="formatom">
 		<div id="addatom-author" class="addatom-div addatom-leftcol">
 			<span class="formatom-header">Author</span><br>							
@@ -22,9 +22,26 @@
 			<textarea cols="37" rows="3" id="formatom-summary" name="formatom-summary"></textarea>
 		</div>									
 	</form>
-	<img id="formatom-post" class="addatom-div" src="img/rss.post.png">
+	<img id="formatom-post" class="addatom-div" src="img/rss.post.png" onclick="submitatom()">
 </div>
 <script type="text/javascript">
-	$('#addatom').corner();
-	$('.addatom-header').corner("top");
+	//$('#addatom').corner();
+	//$('.addatom-header').corner("top");
+	var lastAtomClass = 0;
+	function submitatom(){
+		$.ajax({
+			type: "POST",
+			url: "anatomical.php",
+			data: "type=rss.post&author="+$("#formatom-author").val()+
+					"&downtime="+$("#formatom-downtime").val()+
+					"&machinename="+$("#formatom-machinename").val()+
+					"&machineip="+$("#formatom-machineip").val()+
+					"&summary="+$("#formatom-summary").val(),
+			success: function(msg){
+				lastAtomClass = (lastAtomClass + 1)%2;
+				this.$newAtom = $("<div class='corner readatom"+lastAtomClass+"'>"+msg+"</div>");
+				$('#readatom').prepend(this.$newAtom.fadeIn("fast"));
+			}
+		});
+	}
 </script>

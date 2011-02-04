@@ -15,6 +15,12 @@ body{
 	margin-top:15px;
 }
 
+.corner{
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
 #readatom{
 	position:absolute;
 	top: 302px;
@@ -38,13 +44,13 @@ body{
 	color:#999;
 	font-weight:bold;
 }
-.readatom1{
+.readatom0{
 	background: #99AAD9;
 	padding:10px;
 	margin-bottom: 15px;
 }
 
-.readatom2{
+.readatom1{
 	background: #A6ABBA;
 	padding:10px;
 	margin-bottom: 15px;
