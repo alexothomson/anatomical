@@ -15,6 +15,16 @@
    You should have received a copy of the GNU General Public License
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
+	if($_POST){
+		if($_POST["type"] == "rss.post"){
+			echo "<b>" . $_POST["machinename"] . "</b>|<i>" .
+				"" . $_POST["machineip"] . "</i>|" .
+				"" . $_POST["summary"] . "|" .
+				"<i>" . $_POST["downtime"] ."</i>";
+			exit;
+		}
+	}
 ?>
 <html>
 	<head>
@@ -36,17 +46,12 @@
 		</div>
 		<div id="body" class="body">			
 			<?php if(file_exists("addatom.html")){echo file_get_contents("addatom.html");}?>
-			<div class="readatom-header">Latest Atoms</div>	
-			<div id="readatom" class="readatom">				
-				<div class="readatom1">Hello.</div>
-				<div class="readatom2">How are you.</div>
-				<div class="readatom1">This is a test.</div>
+			<div class="readatom-header corner">Latest Atoms</div>	
+			<div id="readatom" class="readatom corner">
 			</div>
 			<script type="text/javascript">
-				$('#readatom').corner();
-				$('.readatom1').corner();
-				$('.readatom2').corner();
-				$('.readatom-header').corner("top");
+				//$('.readatom').corner();
+				//$('.readatom-header').corner("top");
 			</script>
 		</div>
 
