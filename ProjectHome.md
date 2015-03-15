@@ -1,0 +1,1 @@
+An attempt to make Atom/RSS syndication easy and standalone by providing a simple interface, a clean display, and a useful search feature.
